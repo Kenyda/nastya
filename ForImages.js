@@ -46,7 +46,9 @@ var congs =  ['Настюшенька моя!', 'Поздравляю тебя �
 var i=0;
 function ad (){
     cons.innerHTML = congs[i];
+    if(i<congs.length){
     i++;
+    }
     console.log(i);
 }
 setInterval (ad, 3000);
