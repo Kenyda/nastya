@@ -14,7 +14,7 @@ function getRandomInt(min, max) {
 function show () {
     ids++;
 
-    adres = getRandomInt(1, 25)+".jpg";
+    adres = "./imgs/" + getRandomInt(1, 25) + ".jpg";
     _top = getRandomInt(60, height - 70 - (height * 0.5));
     left = getRandomInt(0, width-(0.3*width));
     return '<img id="' + ids + '" src="' + adres + '" style="position: fixed; margin-top: ' + _top + 'px; max-width: 30%; max-height: 50%; margin-left: ' + left + 'px; opacity: 1">';   
